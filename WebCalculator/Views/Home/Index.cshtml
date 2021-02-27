@@ -1,0 +1,74 @@
+﻿<head>
+    <title>Web-Calculator</title>
+    <style>
+        body {
+            background: #f8ecec;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+
+        .wrap {
+            width: 400px;
+            margin: auto;
+            height: auto;
+            background: #c3b5b5;
+            padding: 15px;
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 10px;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        input[type=button] {
+            width: 89px;
+            padding: 10px;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <form name="cal">
+            <input type="text" class="maindisplay" value="0" name="display" id="display" />
+            <br /><br />
+            <input type="button" class="squared" value="x²" />
+            <input type="button" class="clearlast" value="CE" />
+            <input type="button" class="clear" value="C" />
+            <input type="button" value="/" class="oper" onclick="cal.display.value+='/'" />
+            <br /><br />
+            <input type="button" value="7" id="seven" />
+            <input type="button" value="8" id="eight" />
+            <input type="button" value="9" id="nine" />
+            <input type="button" value="*" class="oper" onclick="cal.display.value+='*'" />
+            <br /><br />
+            <input type="button" value="4" id="four" />
+            <input type="button" value="5" id="five" />
+            <input type="button" value="6" id="six" />
+            <input type="button" value="-" class="oper" onclick="cal.display.value+='-'" />
+            <br /><br />
+            <input type="button" value="1" id="one" />
+            <input type="button" value="2" id="two" />
+            <input type="button" value="3" id="three" />
+            <input type="button" value="+" class="oper" onclick="cal.display.value+='+'" />
+            <br /><br />
+            <input type="button" class="negative" value="+/-" />
+            <input type="button" class="zero" value="0" onclick="cal.display.value+='0'" />
+            <input type="button" class="dot" value="." onclick="cal.display.value+='.'" />
+            <input type="button" value="=" class="equal" />
+            <br /><br />
+        </form>
+    </div>
+</body>
+
+
